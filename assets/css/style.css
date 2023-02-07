@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header__bar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.estilo__logo {
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav__bar {
+    display: flex;
+    padding: 0 34px;
+    min-height: 70px;
+}
+
+.ul__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.link__bar {
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
