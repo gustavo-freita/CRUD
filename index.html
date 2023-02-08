@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>CRUD</title>
@@ -21,8 +22,43 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container">
+        <div class="titbut">
+            <span>Cadastro de Clientes</span>
+            <button onclick="openModal()" id="new">Incluir</button>
+        </div>
 
+        <div class="div__table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Número</th>
+                        <th class="acao">Editar</th>
+                        <th class="acao">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="modal__container">
+            <div class="modal">
+                <form>
+                    <label for="m__nome">Nome</label>
+                    <input id="m__nome" type="text" required />
+
+                    <label for="m__email">E-mail</label>
+                    <input id="m__email" type="email" required />
+
+                    <label for="m__numero">Número</label>
+                    <input id="m__numero" type="number" required />
+                    <button id="bot__salvar">Salvar</button>
+                </form>
+            </div>
+        </div>
     </main>
     <script src="./assets/js/crud.js"></script>
 </body>
