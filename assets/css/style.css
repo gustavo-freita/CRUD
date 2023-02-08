@@ -1,13 +1,25 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.1);
+}
+
+/*Cabeçalho*/
 .header__bar {
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 43%;
     width: 100%;
     background-color: aquamarine;
 }
@@ -36,5 +48,97 @@
     text-decoration: none;
     font-size: 25px;
 }
+/*Cabeçalho*/
 
+/*Conteudo da página*/
+.container {
+    margin-top: 5%;
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    background: #fff;
+}
 
+.titbut {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 12px;
+}
+
+.titbut span {
+    font-weight: 900;
+    font-size: 20px;
+    word-break: break-all;
+}
+
+button {
+    cursor: pointer;
+}
+
+#new {
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    color: #000;
+    background-color: rgb(57,57,226);
+}
+
+.div__table {
+    padding:10px;
+    width:auto;
+    height: inherit;
+    overflow: auto;
+}
+
+.div__table::-webkit-scrollbar {
+    width: 12px;
+    background-color: whitesmoke;
+}
+
+.div__table::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: darkgray;
+}
+
+table {
+    width: 100%;
+    border-spacing: 10px;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: whitesmoke;
+}
+
+tr {
+    border-bottom: 1px solid rgba(238,235,235)!important;
+}
+
+tbody tr td {
+    vertical-align: text-top;
+    padding: 6px;
+    max-width: 50px;
+}
+
+thead tr th {
+    padding: 5px;
+    text-align: start;
+    margin-bottom: 50px;
+}
+
+tbody tr {
+    margin-bottom: 50px;
+}
+
+thead tr th.acao {
+    width: 100px!important;
+    text-align: center;
+}
+
+tbody tr td.acao {
+    text-align: center;
+}
+/*Conteudo da página*/
