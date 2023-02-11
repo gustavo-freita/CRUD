@@ -13,42 +13,6 @@ body {
     background-color: rgba(0,0,0,0.1);
 }
 
-/*Cabeçalho*/
-.header__bar {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 43%;
-    width: 100%;
-    background-color: aquamarine;
-}
-
-.estilo__logo {
-    color: #000;
-    text-decoration: none;
-    font-size: 25px;
-}
-
-.nav__bar {
-    display: flex;
-    padding: 0 34px;
-    min-height: 70px;
-}
-
-.ul__bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 25px;
-}
-
-.link__bar {
-    color: #000;
-    text-decoration: none;
-    font-size: 25px;
-}
-/*Cabeçalho*/
 
 /*Conteudo da página*/
 .container {
